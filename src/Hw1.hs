@@ -44,6 +44,7 @@ listReverse xs = error "TBD:listReverse"
 --
 -- >>> palindrome ""
 -- True
+-- test
 
 palindrome :: String -> Bool
 palindrome w = error "TBD:palindrome"
