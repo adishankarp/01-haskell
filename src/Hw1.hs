@@ -128,6 +128,6 @@ sumList (x:xs) = x + sumList(xs)
 validateCardNumber :: Integer -> Bool
 validateCardNumber n
     | n <= 0 = False
-    | otherwise = (sumList (doubleEveryOther (listReverse (digitsOfInt n)))) `mod` 10 == 0
+    | otherwise = sumList (digitsOfInts(doubleEveryOther (listReverse (digitsOfInt n)))) `mod` 10 == 0
 
 
